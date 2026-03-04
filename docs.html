@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FireXplore Docs | Getting Started</title>
+    <meta
+      name="description"
+      content="Documentazione FireXplore: installazione, login Firebase CLI, navigazione collection, JS Query, CRUD e compare A/B."
+    />
+    <meta property="og:title" content="FireXplore Docs" />
+    <meta property="og:description" content="Guida rapida e operativa per usare FireXplore." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./firexplore-logo.png" />
+    <link rel="icon" type="image/png" href="./firexplore-logo.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="glow glow-a"></div>
+    <div class="glow glow-b"></div>
+
+    <div class="page-wrap docs-wrap">
+      <header class="topbar">
+        <a class="brand" href="./index.html" aria-label="FireXplore Home">
+          <img src="./firexplore-logo.png" alt="FireXplore" width="28" height="28" />
+          <span>FireXplore Docs</span>
+        </a>
+        <nav class="top-actions">
+          <a href="./index.html">Home</a>
+          <a href="https://github.com/robchdev/firexplore/releases" target="_blank" rel="noreferrer">Download</a>
+        </nav>
+      </header>
+
+      <section class="docs-hero">
+        <p class="status-pill">Guida Operativa</p>
+        <h1>Getting Started</h1>
+        <p class="lead">
+          Qui trovi il flusso base per lavorare in FireXplore: accesso, apertura progetto,
+          query, CRUD e confronto dati tra ambienti.
+        </p>
+      </section>
+
+      <main class="docs-layout">
+        <aside class="docs-nav">
+          <p>Contenuti</p>
+          <a href="#install">1. Installazione</a>
+          <a href="#login">2. Login Firebase CLI</a>
+          <a href="#projects">3. Progetti e collection</a>
+          <a href="#jsquery">4. JS Query</a>
+          <a href="#crud">5. CRUD collection</a>
+          <a href="#auth">6. Authentication</a>
+          <a href="#compare">7. Compare A/B</a>
+          <a href="#limits">8. Casi speciali</a>
+          <a href="#faq">9. FAQ</a>
+        </aside>
+
+        <article class="docs-content">
+          <section id="install" class="doc-card">
+            <h2>1. Installazione</h2>
+            <ol>
+              <li>Apri la pagina Releases e scarica il pacchetto per il tuo sistema.</li>
+              <li>Installa l'app e avviala normalmente dal sistema operativo.</li>
+              <li>Alla prima apertura verifica che la connessione internet sia attiva.</li>
+            </ol>
+          </section>
+
+          <section id="login" class="doc-card">
+            <h2>2. Login Firebase CLI</h2>
+            <p>
+              FireXplore usa le credenziali del tuo account Firebase CLI. Se la sessione è scaduta,
+              l'app ti riporta alla schermata di login.
+            </p>
+            <pre><code>firebase login</code></pre>
+            <p>Esegui il comando nel terminale e poi riapri FireXplore.</p>
+          </section>
+
+          <section id="projects" class="doc-card">
+            <h2>3. Progetti e collection</h2>
+            <ul>
+              <li>Seleziona un progetto dal pannello sinistro.</li>
+              <li>Apri una collection cliccando sul nome.</li>
+              <li>Usa filtri, ordinamento e layout colonne nella vista tabellare.</li>
+              <li>Le sottocollezioni si aprono dalla colonna dedicata per ogni documento.</li>
+            </ul>
+          </section>
+
+          <section id="jsquery" class="doc-card">
+            <h2>4. JS Query</h2>
+            <p>
+              JS Query ti permette di eseguire codice JavaScript sul contesto Firebase Admin SDK
+              e visualizzare il risultato in più formati.
+            </p>
+            <ul>
+              <li>Table: vista tabellare dei risultati</li>
+              <li>Tree: navigazione ad albero</li>
+              <li>JSON: payload completo</li>
+              <li>Log: output di debug della query</li>
+            </ul>
+          </section>
+
+          <section id="crud" class="doc-card">
+            <h2>5. CRUD collection</h2>
+            <p>
+              Dal pulsante CRUD puoi fare insert, update e delete su documenti selezionati.
+              Il payload JSON è editabile e copiabile.
+            </p>
+            <ul>
+              <li>Insert: crea nuovi documenti con JSON guidato</li>
+              <li>Update: modifica una o più righe selezionate</li>
+              <li>Delete: elimina documenti selezionati con conferma</li>
+            </ul>
+          </section>
+
+          <section id="auth" class="doc-card">
+            <h2>6. Authentication</h2>
+            <p>
+              Nella sezione Authentication puoi ispezionare utenti, applicare filtri e lanciare
+              azioni bulk dove supportate (claims, reset password, delete).
+            </p>
+          </section>
+
+          <section id="compare" class="doc-card">
+            <h2>7. Compare A/B</h2>
+            <p>
+              Compare confronta due lati (progetto/path A e B) e mostra differenze:
+              cambiato, solo a sinistra, solo a destra, uguale.
+            </p>
+            <p>Puoi esportare il diff in JSON per audit o review.</p>
+          </section>
+
+          <section id="limits" class="doc-card">
+            <h2>8. Casi speciali</h2>
+            <ul>
+              <li>
+                <strong>Firestore Datastore Mode:</strong> FireXplore mostra un warning dedicato.
+                In questa modalità alcune operazioni non sono disponibili via API Firestore standard.
+              </li>
+              <li>
+                <strong>Sessione scaduta:</strong> l'app richiede nuovo login per sicurezza.
+              </li>
+            </ul>
+          </section>
+
+          <section id="faq" class="doc-card">
+            <h2>9. FAQ</h2>
+            <h3>Posso usare FireXplore su più progetti?</h3>
+            <p>Sì, puoi passare da un progetto all'altro e usare compare A/B.</p>
+
+            <h3>Supporta dataset grandi?</h3>
+            <p>Sì, con paginazione, filtri e strumenti di export/import.</p>
+
+            <h3>Dove trovo aggiornamenti?</h3>
+            <p>Nel canale Releases, con note versione progressive.</p>
+          </section>
+        </article>
+      </main>
+
+      <footer class="foot">
+        <p>© 2026 FireXplore · Docs preview</p>
+      </footer>
+    </div>
+  </body>
+</html>

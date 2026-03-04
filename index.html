@@ -3,43 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FireXplore - Coming Soon</title>
+    <title>FireXplore | Coming Soon</title>
     <meta
       name="description"
-      content="FireXplore: Firebase desktop toolkit. Coming soon."
+      content="FireXplore è il toolkit desktop per Firestore e Firebase Auth. Confronto DB, query JavaScript e CRUD visuale in un'unica app."
     />
+    <meta property="og:title" content="FireXplore | Coming Soon" />
+    <meta
+      property="og:description"
+      content="Toolkit desktop per Firestore/Firebase Auth. Coming soon con release pubblica progressiva."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./firexplore-logo.png" />
+    <link rel="icon" type="image/png" href="./firexplore-logo.png" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="bg-orb orb-a"></div>
-    <div class="bg-orb orb-b"></div>
+    <div class="noise"></div>
+    <div class="glow glow-a"></div>
+    <div class="glow glow-b"></div>
 
-    <main class="coming-shell">
-      <p class="eyebrow">FireXplore</p>
-      <h1>Coming Soon</h1>
-      <p class="lead">
-        Il toolkit desktop per Firestore e Firebase Auth sta arrivando in
-        versione pubblica.
-      </p>
-
-      <div class="pill-row">
-        <span>Compare A/B</span>
-        <span>Auth Bulk</span>
-        <span>Query Pro</span>
-        <span>Realtime</span>
-      </div>
-
-      <div class="cta-row">
-        <a class="btn primary" href="https://github.com/robchdev/firexplore-site" target="_blank" rel="noreferrer">
-          Segui il progetto
+    <div class="page-wrap">
+      <header class="topbar">
+        <a class="brand" href="https://github.com/robchdev/firexplore" target="_blank" rel="noreferrer">
+          <img src="./firexplore-logo.png" alt="FireXplore" />
+          <span>FireXplore</span>
         </a>
-        <a class="btn ghost" href="https://github.com/robchdev/firexplore/releases" target="_blank" rel="noreferrer">
-          Releases
-        </a>
-      </div>
+        <nav class="top-actions">
+          <a href="https://github.com/robchdev/firexplore/releases" target="_blank" rel="noreferrer">Releases</a>
+          <a href="https://github.com/robchdev/firexplore" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+      </header>
 
-      <p class="footnote">Prezzi competitivi. Trial disponibile al lancio.</p>
-    </main>
+      <main class="hero">
+        <section class="hero-left">
+          <p class="status-pill">Desktop Firebase Toolkit · Coming Soon</p>
+          <h1>
+            Gestione Firestore e Auth,
+            <span>senza attrito</span>
+          </h1>
+          <p class="lead">
+            FireXplore porta in una sola app desktop: tabella stile DB, JS Query,
+            CRUD assistito e confronto A/B tra progetti. Focus su velocità,
+            sicurezza e workflow da power-user.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://github.com/robchdev/firexplore/releases" target="_blank" rel="noreferrer">
+              Scarica Preview
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/robchdev/firexplore" target="_blank" rel="noreferrer">
+              Documentazione
+            </a>
+          </div>
+
+          <div class="microcopy">Beta pubblica in rollout progressivo. Windows/macOS supportati.</div>
+        </section>
+
+        <aside class="hero-card">
+          <h2>Cosa troverai al lancio</h2>
+          <ul>
+            <li>Vista tabellare Firestore con filtri, sort, resize colonne</li>
+            <li>Query JavaScript su collection e Authentication</li>
+            <li>CRUD visuale con payload JSON e bulk operations</li>
+            <li>Compare A/B tra ambienti per debug rapido</li>
+            <li>Export CSV/JSON e workflow per dataset grandi</li>
+          </ul>
+          <p class="card-note">Obiettivo: essere più rapido dei flussi manuali da console.</p>
+        </aside>
+      </main>
+
+      <section class="strip">
+        <article>
+          <h3>Stato progetto</h3>
+          <p>Sviluppo attivo con release frequenti da GitHub.</p>
+        </article>
+        <article>
+          <h3>Target utenti</h3>
+          <p>Dev, data engineer, QA e team ops che usano Firebase ogni giorno.</p>
+        </article>
+        <article>
+          <h3>Prezzi</h3>
+          <p>Piano entry competitivo rispetto ai tool desktop esistenti.</p>
+        </article>
+      </section>
+
+      <footer class="foot">
+        <p>© 2026 FireXplore · Built by Robchdev</p>
+      </footer>
+    </div>
   </body>
 </html>
-
